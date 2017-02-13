@@ -271,7 +271,7 @@ attach it to the `<iron-form>`:
         // elements with those names.
         this.ajax.url = this._form.getAttribute('action');
         this.ajax.method = this._form.getAttribute('method');
-        this.ajax.contentType = this._form.getAttribute('enctype');
+        this.ajax.contentType = this._form.getAttribute('enctype') || 'application/x-www-form-urlencoded';
         //this.ajax.withCredentials = this.withCredentials;
         //this.ajax.headers = this.headers;
 
